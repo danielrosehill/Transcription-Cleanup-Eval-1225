@@ -2,6 +2,8 @@
 
 Evaluating cloud audio understanding models for their ability to transcribe audio and follow post-processing prompts in a single step.
 
+> **Note on Evaluation Methodology**: This is a subjective, non-rigorous evaluation. The quality of transcription cleanup and formatting is inherently subjective - there's no single "correct" output for tasks like filler removal or format conversion. Results reflect personal judgment of output quality for the specific workflows tested.
+
 ## Purpose
 
 Traditional ASR (Automatic Speech Recognition) produces verbatim transcripts that require a second LLM call to clean up or reformat. **Audio multimodal models** can do both in one step - taking audio as input and producing formatted, cleaned text directly.
@@ -39,14 +41,13 @@ This evaluation tests various models on:
 
 ## Evaluation Prompts
 
-For each audio sample, test these transformations:
+Prompts are stored as individual text files in `prompts/` for transparency. These are universal prompts that work across any audio content:
 
 1. **Raw transcription** - Baseline verbatim output
 2. **Filler removal** - Remove ums, ahs, false starts
-3. **Add subheadings** - Structure with headers
+3. **With subheadings** - Structure with section headers
 4. **Business formal** - Professional tone
-5. **Email format** - Format as professional email
-6. **JSON task list** - Extract as structured JSON
+5. **Inferred corrections** - Apply verbal corrections ("I meant X, not Y")
 
 ## Key Insight
 
@@ -66,11 +67,12 @@ This is how Mistral handles it - the transcription endpoint won't follow formatt
 ```
 .
 ├── audio/              # Test audio samples (1-6.mp3)
+├── prompts/            # Evaluation prompts (one per .txt file)
 ├── context/            # Project context and notes
 │   ├── note.mp3        # Voice note explaining this project
 │   ├── note-raw.md     # Verbatim transcript
 │   └── note-edited.md  # Cleaned transcript
-├── source-texts/       # Original texts used to generate audio
+├── results/            # Evaluation outputs by model
 ├── ref.md              # Detailed reference documentation
 └── README.md
 ```

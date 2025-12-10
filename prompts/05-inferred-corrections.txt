@@ -1,0 +1,1 @@
+Transcribe this audio and apply any verbal corrections the speaker makes. If the speaker says something like "I meant X, not Y" or "actually, let me correct that", incorporate the correction into the final text rather than including both the error and correction. Produce clean text that reflects the speaker's intended meaning.

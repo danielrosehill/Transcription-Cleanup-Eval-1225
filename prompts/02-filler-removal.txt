@@ -1,0 +1,1 @@
+Transcribe this audio and remove all filler words (um, uh, ah, like, you know), false starts, repetitions, and verbal stumbles. Produce clean, readable text while preserving the original meaning and intent.
