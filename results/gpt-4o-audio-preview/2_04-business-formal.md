@@ -1,8 +1,8 @@
-# OPENAI - 2 - 04-business-formal
+# GPT-4O-AUDIO-PREVIEW - 2 - 04-business-formal
 
 **Audio:** 2.mp3
 **Prompt:** 04-business-formal
-**Model:** openai
+**Model:** gpt-4o-audio-preview
 
 ---
 

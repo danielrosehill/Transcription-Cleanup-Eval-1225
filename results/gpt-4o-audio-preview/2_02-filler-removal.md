@@ -1,8 +1,8 @@
-# OPENAI - 2 - 02-filler-removal
+# GPT-4O-AUDIO-PREVIEW - 2 - 02-filler-removal
 
 **Audio:** 2.mp3
 **Prompt:** 02-filler-removal
-**Model:** openai
+**Model:** gpt-4o-audio-preview
 
 ---
 

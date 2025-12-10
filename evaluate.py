@@ -129,14 +129,14 @@ def run_evaluation(models: list[str] = None, audio_files: list[str] = None,
         all_audio = [a for a in all_audio if a.stem in audio_files]
 
     available_models = {
-        "openai": run_openai,
-        "gemini": run_gemini,
+        "gpt-4o-audio-preview": run_openai,
+        "gemini-2.0-flash": run_gemini,
     }
 
     if models:
         available_models = {k: v for k, v in available_models.items() if k in models}
 
-    print(f"Running evaluation:")
+    print("Running evaluation:")
     print(f"  Models: {list(available_models.keys())}")
     print(f"  Audio files: {[a.name for a in all_audio]}")
     print(f"  Prompts: {list(all_prompts.keys())}")
@@ -163,7 +163,8 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Run audio multimodal evaluation")
-    parser.add_argument("--models", "-m", nargs="+", choices=["openai", "gemini"],
+    parser.add_argument("--models", "-m", nargs="+",
+                        choices=["gpt-4o-audio-preview", "gemini-2.0-flash"],
                         help="Models to test (default: all)")
     parser.add_argument("--audio", "-a", nargs="+",
                         help="Audio file stems to test, e.g., '1 2 3' (default: all)")

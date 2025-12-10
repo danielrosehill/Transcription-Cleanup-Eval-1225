@@ -1,8 +1,8 @@
-# OPENAI - 1 - 05-inferred-corrections
+# GPT-4O-AUDIO-PREVIEW - 1 - 05-inferred-corrections
 
 **Audio:** 1.mp3
 **Prompt:** 05-inferred-corrections
-**Model:** openai
+**Model:** gpt-4o-audio-preview
 
 ---
 

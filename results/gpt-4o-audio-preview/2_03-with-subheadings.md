@@ -1,8 +1,8 @@
-# OPENAI - 2 - 03-with-subheadings
+# GPT-4O-AUDIO-PREVIEW - 2 - 03-with-subheadings
 
 **Audio:** 2.mp3
 **Prompt:** 03-with-subheadings
-**Model:** openai
+**Model:** gpt-4o-audio-preview
 
 ---
 

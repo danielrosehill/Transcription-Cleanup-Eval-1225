@@ -1,8 +1,8 @@
-# OPENAI - 4 - 01-raw-transcription
+# GPT-4O-AUDIO-PREVIEW - 4 - 01-raw-transcription
 
 **Audio:** 4.mp3
 **Prompt:** 01-raw-transcription
-**Model:** openai
+**Model:** gpt-4o-audio-preview
 
 ---
 
