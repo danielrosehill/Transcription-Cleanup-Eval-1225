@@ -1,0 +1,9 @@
+# GEMINI-2.5-FLASH - 2 - 01-raw-transcription
+
+**Audio:** 2.mp3
+**Prompt:** 01-raw-transcription
+**Model:** gemini-2.5-flash
+
+---
+
+Okay, um, just a quick task list of things that I'm working on today and I'm trying to get done. Uh, in no particular order whatsoever, but it would be cool to organize these into some kind of a an organized format. Uh, looking around at my, at the home office. Well, we're almost there. Um, I just have a few boxes to sort away and then get the rest of the stuff into the inventory. Um, and I'm being pretty, trying to be pretty decisive about just like throwing, uh, old stuff away that I don't need anymore. Um, I have a call at 6:15 to 7:15, that's one hour, and I really can't go over that time because, um, I need to get get around to all these things. Uh, Hanukkah starts on Sunday, so I'm trying to just have a nice clean workspace ahead of then. Um, I don't know if the storm is happening or going to happen. Uh, I have a pack to pick up. It's important. It's the macro pad for Kden Live editing. Uh, so I really want to get that. And, um, that's in, uh, the usual place for a collection. So I, they close at 7:00, so I need to actually get that done before the call. Uh, before the call itself, I'd like to just have a couple of things, I don't know if I'm gonna manage to do this in time. Um, post for based on the speech that was uploaded, um, ideas for short posts, and then reformatting it as a longer post, because that was my main feedback was that certainly if you don't break it up as paragraphs, just having a very big long speech on a, on a website going to, it's not the best presentation. And I think a lot of the success or challenge in this kind of messaging comes down simply to presentation and strangely front end is kind of a, um, part of that picture because front-end design can actually be quite a powerful way of presenting information more modula, in a more modular fashion.

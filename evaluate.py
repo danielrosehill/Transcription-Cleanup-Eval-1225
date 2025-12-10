@@ -74,7 +74,7 @@ def run_openai(audio_path: Path, prompt: str) -> str:
 
 
 def run_gemini(audio_path: Path, prompt: str) -> str:
-    """Run audio through Gemini 2.0 Flash."""
+    """Run audio through Gemini 2.5 Flash."""
     try:
         import google.generativeai as genai
     except ImportError:
@@ -89,7 +89,7 @@ def run_gemini(audio_path: Path, prompt: str) -> str:
     # Upload the audio file
     audio_file = genai.upload_file(audio_path)
 
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    model = genai.GenerativeModel("gemini-2.5-flash")
     response = model.generate_content([audio_file, prompt])
 
     return response.text
@@ -130,7 +130,7 @@ def run_evaluation(models: list[str] = None, audio_files: list[str] = None,
 
     available_models = {
         "gpt-4o-audio-preview": run_openai,
-        "gemini-2.0-flash": run_gemini,
+        "gemini-2.5-flash": run_gemini,
     }
 
     if models:
@@ -164,7 +164,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Run audio multimodal evaluation")
     parser.add_argument("--models", "-m", nargs="+",
-                        choices=["gpt-4o-audio-preview", "gemini-2.0-flash"],
+                        choices=["gpt-4o-audio-preview", "gemini-2.5-flash"],
                         help="Models to test (default: all)")
     parser.add_argument("--audio", "-a", nargs="+",
                         help="Audio file stems to test, e.g., '1 2 3' (default: all)")
